@@ -1,0 +1,1 @@
+SELECT category_name, COUNT(*) FROM product_categories RIGHT JOIN products USING(category_id) GROUP BY category_name ORDER BY COUNT(*) DESC; 
